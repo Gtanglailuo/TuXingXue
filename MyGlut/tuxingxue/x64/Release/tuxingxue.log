@@ -1,0 +1,12 @@
+﻿  glad.c
+  test.cpp
+  test1.cpp
+  test2.cpp
+test1.obj : error LNK2001: 无法解析的外部符号 glutInit
+test1.obj : error LNK2001: 无法解析的外部符号 glutCreateWindow
+test1.obj : error LNK2001: 无法解析的外部符号 glutInitDisplayMode
+test1.obj : error LNK2001: 无法解析的外部符号 glutDisplayFunc
+test1.obj : error LNK2001: 无法解析的外部符号 glutMainLoop
+test1.obj : error LNK2001: 无法解析的外部符号 glutInitWindowPosition
+test1.obj : error LNK2001: 无法解析的外部符号 glutInitWindowSize
+D:\jisuanjituxingxue\Mytest\x64\Release\tuxingxue.exe : fatal error LNK1120: 7 个无法解析的外部命令
