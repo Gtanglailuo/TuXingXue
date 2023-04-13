@@ -53,7 +53,7 @@ int main()
      0.1f, -0.1f, 0.0f,
      0.0f,  0.1f, 0.0f
     };
-    unsigned int VBO,VB02, VAO;
+    unsigned int VBO, VAO;
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
     glBindVertexArray(VAO);
