@@ -13,6 +13,7 @@ void processInput(GLFWwindow* window);
 
 int main()
 {
+    
     #pragma region Open a Window
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -52,7 +53,7 @@ int main()
      0.1f, -0.1f, 0.0f,
      0.0f,  0.1f, 0.0f
     };
-    unsigned int VBO, VAO;
+    unsigned int VBO,VB02, VAO;
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
     glBindVertexArray(VAO);
@@ -73,7 +74,7 @@ int main()
 
     glVertexAttribPointer(6, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(6);
-    //ª˘±æ±‰ªª¥¶¿Ì
+    //¬ª√π¬±¬æ¬±√§¬ª¬ª¬¥¬¶√Ä√≠
    
     unsigned int transIndex = glGetUniformLocation(myShader->ID, "trans");
    
@@ -92,7 +93,7 @@ int main()
         mytrans = glm::rotate(mytrans, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
         mytrans = glm::scale(mytrans, glm::vec3(1.0f * sin(0.5 * (float)glfwGetTime()), 1.0f * sin(0.8 * (float)glfwGetTime()), 1.0f));
         
-        // «Âø’∆¡ƒª
+        // √á√•¬ø√ï√Ü√Å√Ñ¬ª
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         glClear(GL_COLOR_BUFFER_BIT);
