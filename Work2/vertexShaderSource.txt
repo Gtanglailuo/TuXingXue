@@ -1,6 +1,6 @@
-#version 330 core
-layout (location = 6) in vec3 aPos;//λ��
-layout (location = 7) in vec3 aColor;//��ɫ
+﻿#version 330 core
+layout (location = 6) in vec3 aPos;//Î»ÖÃ
+layout (location = 7) in vec3 aColor;//ÑÕÉ«
 out vec4 vertexColor;
 
 uniform mat4 trans;
@@ -15,27 +15,3 @@ void main()
 
    vertexColor=vec4(aColor,1.0f);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -74,11 +74,11 @@ int main()
 
     glVertexAttribPointer(6, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(6);
-    //»ù±¾±ä»»´¦Àí
+
 
     unsigned int transIndex = glGetUniformLocation(myShader->ID, "trans");
 
-    unsigned int transIndex1 = glGetUniformLocation(myShader->ID, "trans1");
+    //unsigned int transIndex1 = glGetUniformLocation(myShader->ID, "trans1");
 
 
     //mytrans = glm::scale(mytrans, glm::vec3(glm::abs(glm::sin((float)glfwGetTime() * 0.1f)), 1.0f, 1.0f));
